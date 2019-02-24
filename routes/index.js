@@ -3,23 +3,23 @@ let router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'Home' });
 });
 
 router.get('/about', function(req, res, next) {
-  res.render('index', { title: 'About' });
+  res.render('about', { title: 'About Me' });
 });
 
 router.get('/products', function(req, res, next) {
-  res.render('index', { title: 'Products' });
+  res.render('project', { title: 'Projects' });
 });
 
 router.get('/services', function(req, res, next) {
-  res.render('index', { title: 'Services' });
+  res.render('services', { title: 'Services Page' });
 });
 
 router.get('/contact', function(req, res, next) {
-  res.render('index', { title: 'Contact' });
+  res.render('contact', { title: 'Contact Me' });
 });
 
 module.exports = router;
